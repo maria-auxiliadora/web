@@ -1,0 +1,92 @@
+nav {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    nav {
+        position: fixed;
+        bottom: 8px;
+        width: 100%;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        z-index: 122;
+    }
+
+    .nav__block_ux {
+        display: flex;
+        width: 420px;
+        border-radius: 20px;
+        border: 1px solid rgb(0 0 0 / 12%);
+        background-color: rgb(232 235 236 / 70%);
+        backdrop-filter: saturate(180%) blur(20px);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        box-shadow: 0px 0px 25px rgb(0 0 0 / 12%);
+    }
+
+    nav .nav__block_ux li {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        min-width: 50px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    /*----- PUNTO DE ACCESSO ICONS -----*/
+    nav .nav__block_ux li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav .nav__block_ux li a::before {
+        content: '';
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        bottom: 3px;
+        background-color: black;
+        border-radius: 50%;
+        transition: all .3s ease-in-out;
+    }
+
+    nav .nav__block_ux li a.active::before {
+        width: 5px;
+        height: 5px;
+    }
+
+    nav .nav__block_ux li a .far {
+        margin-top: 2px;
+        font-size: 25px;
+        color: #093ec8;
+    }
+
+
+    /*----- ICONOS -----*/
+    g {
+        transition: all .3s ease-in-out;
+    }
+
+    nav .nav__block_ux li a g {
+        stroke: #093ec8;
+    }
+
+    nav .nav__block_ux li a.active g {
+        stroke: black;
+    }
+
+    nav .nav__block_ux li a.active .far {
+        color: black;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    .nav__block_ux {
+        width: 94%;
+    }
+}
+
