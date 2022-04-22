@@ -48,10 +48,10 @@
     top: 0;
     right: 0;
     bottom: auto;
-    z-index: 9999;
+    z-index: 99;
     padding: 15px 2.5rem 14px;
     border-bottom: 1px solid #e1e4e8;
-    background-color: hsla(0,0%,100%,.85);
+    background-color: hsla(0, 0%, 100%, .85);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
 }

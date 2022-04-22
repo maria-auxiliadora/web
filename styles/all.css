@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -20,6 +21,11 @@ body {
     color: #1b1f23;
     font-size: 1rem;
     line-height: 1.625rem;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 body::-webkit-scrollbar {
@@ -42,6 +48,13 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+button {
+    outline: none;
+    border-style: none;
+    background: none;
+    cursor: pointer;
 }
 
 .container {
@@ -183,6 +196,10 @@ img {
     gap: 28px;
 }
 
+.gp18 {
+    gap: 18px;
+}
+
 .text-center {
     text-align: center;
 }
@@ -253,6 +270,161 @@ h4 {
 	width: fit-content;
 }
 
+.t90vh {
+    top: 90vh !important;
+    transition: top .5s ease;
+}
+
+/*-- modal --*/
+.modal_cont {
+    /*display: none;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;
+}
+
+.modal_cont_animate {
+    opacity: 1;
+    visibility: visible;
+}
+
+.page-category {
+    overflow: hidden;
+}
+
+.modal_cont_animate .modal_anhost {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal_cont_animate .modal-container {
+    padding: 40px;
+}
+
+.modal_cont_animate .t90vh {
+    top: 0 !important;
+}
+
+.modal_anhost {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    inset: 0px;
+    /*-webkit-backdrop-filter: blur(25px) opacity(1);
+    backdrop-filter: blur(25px) opacity(1);*/
+    background-color: rgb(34, 34, 34, .7);
+    transition: all .5s ease;
+}
+
+.modal-container {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    -webkit-box-align: center;
+    justify-content: center;
+    position: absolute;
+    max-height: 100vh;
+    inset: 0px;
+    transition: all .5s ease;
+}
+
+.modal_content_anhost {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    width: 100%;
+    height: auto;
+    max-height: -webkit-fill-available;
+    box-shadow: rgb(0 0 0 / 28%) 0px 8px 28px;
+    z-index: 999;
+}
+
+._wheg71v {
+    max-width: 780px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+._pa35zs {
+    position: absolute;
+    display: flex;
+    top: 16px;
+    left: 24px;
+    z-index: 1;
+}
+
+._1lplc7 {
+    -webkit-box-flex: 0;
+    flex: 0 0 72px;
+    position: sticky;
+    text-align: left;
+    top: 0px;
+    z-index: -1;
+}
+
+.close_modal {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    color: rgb(34, 34, 34);
+    cursor: pointer;
+    touch-action: manipulation;
+    background: transparent;
+}
+
+.close_modal:hover {
+    color: rgb(0, 0, 0);
+}
+
+.close_modal::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: background .3s ease;
+}
+
+.close_modal:hover::before {
+    background: rgb(247, 247, 247);
+}
+
+.modal_block_c {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.content_hidden-anhost {
+    overflow: auto;
+    width: 100%;
+}
+
+/*paddings*/
+.pd024 {
+    padding: 0 24px;
+}
+
+.pd24 {
+    padding: 24px;
+}
+
+.pd-b3r {
+    padding-bottom: 3rem;
+}
+
 /*margins*/
 .margin-medium {
     margin: 2rem 0;
@@ -260,6 +432,10 @@ h4 {
 
 .mr-ta {
     margin-top: auto;
+}
+
+.mr-t32 {
+    margin-top: 23px;
 }
 
 .margin-custom1 {
@@ -523,6 +699,37 @@ h1 {
 
     .w-layout-grid {
         grid-template-columns: 1fr;
+    }
+
+    /*modals*/
+    .modal_cont_animate .modal-container {
+        padding: 0;
+    }
+
+    .modal-container {
+        align-items: inherit;
+    }
+
+    ._wheg71v {
+        border-radius: 0;
+    }
+
+    ._1lplc7 {
+        flex: 0 0 48px;
+    }
+
+    .content_hidden-anhost {
+        padding-top: 16px;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .modal_anhost {
+        background-color: rgb(34, 34, 34, .7);
+    }
+
+    ._pa35zs {
+        top: 24px;
     }
 }
 
