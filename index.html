@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>I.E.P Maria Auxiliadora</title>
 
+    <!-- Favicon icono de barra -->
+    <link rel="shortcut icon" href="img/footer-logo.png">
+
     <!-- font awesome pro -->
     <link href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" rel="stylesheet">
     
@@ -15,6 +18,12 @@
 	<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
 </head>
 <body>
+
+    <!-- loader -->
+    <div class="loader_bg">
+        <div class="loader"></div>
+        <div class="loader2"></div>
+    </div>
 
 	<!-- start header -->
 	<header class="nav-component">
@@ -29,10 +38,10 @@
 
                 <div class="navbar">
                     <ul>
-                        <li><span class="nav_link active">Inicio</span></li>
+                        <li class="inicio"><span class="nav_link active">Inicio</span></li>
                         <li><span class="nav_link">Acerca de</span></li>
                         <li><span class="nav_link">Tutores</span></li>
-                        <li><span class="nav_link">Blogs</span></li>
+                        <li class="blog"><span class="nav_link">Blogs</span></li>
                     </ul>
                 </div>
             </div>
@@ -44,17 +53,17 @@
     <nav>
         <div class="nav__block_ux">
             <li>
-                <a href="#inicio" class="inicio active">
+                <div class="nav_ux inicio active">
                     <svg width="32px" height="32px" viewBox="0 0 256 256">
                         <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16">
                             <path d="M151.99414,207.99263v-48.001a8,8,0,0,0-8-8h-32a8,8,0,0,0-8,8v48.001a8,8,0,0,1-7.999,8l-47.99414.00632a8,8,0,0,1-8.001-8v-92.4604a8,8,0,0,1,2.61811-5.91906l79.9945-72.73477a8,8,0,0,1,10.76339-.00036l80.0055,72.73509A8,8,0,0,1,216,115.53887V207.999a8,8,0,0,1-8.001,8l-48.00586-.00632A8,8,0,0,1,151.99414,207.99263Z"></path>
                         </g>
                     </svg>
-                </a>
+                </div>
             </li>
 
             <li>
-                <a href="#perfil" class="perfil icon_user">
+                <div class="nav_ux">
                     <svg width="32px" height="32px" viewBox="0 0 96.000000 96.000000">
                         <g transform="translate(-4151.642 -3582)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
                             <g transform="translate(4179 3590)" class="path">
@@ -64,23 +73,23 @@
                             <path d="M4173.767,3640.54c5.354.1,43.124.018,49.726,0s11.337,26.282-24.9,26.054S4168.414,3640.441,4173.767,3640.54Z" transform="translate(-0.037 0.403)"/>
                         </g>
                     </svg>
-                </a>
+                </div>
             </li>
 
             <li>
-                <a href="#servicio" class="servicio icon_service" width="32px" height="32px">
+                <div class="nav_ux" width="32px" height="32px">
                     <i class="far fa-tag"></i>
-                </a>
+                </div>
             </li>
             
             <li>
-                <a href="#portafolio" class="portafolio icon_love">
+                <div class="nav_ux blog">
                     <svg width="32px" height="32px" viewBox="0 0 96.000000 96.000000">
                         <g transform="translate(-4193.747 -3685.612)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
                             <path d="M4241.866,3765.488s31-26.722,35.08-37.354-.205-22.521-11.9-25.728c-5.065-1.388-10.112-1.091-14.648,2.179-4.974,3.85-7.709,8.9-8.528,8.934s-4.067-5.484-8.458-8.934-9.865-3.453-15.029-2.179c-8.409,2.611-17.577,14.643-11.643,25.728S4241.866,3765.488,4241.866,3765.488Z"/>
                         </g>
                     </svg>
-                </a>
+                </div>
             </li>
         </div>
     </nav>
@@ -93,9 +102,9 @@
                 <div class="home-content">
                     <div class="block" style="z-index: 1;">
                         <div class="btnrgbmorad wfc">#Educación publica de calidad</div>
-                        <h1 class="heading-display">Descubre cosas nuevas para enriquecer tu habilidad en cualquier momento.</h1>
+                        <h1 class="heading-display">¿Qué le está diciendo <span class="text_red">Díos</span> a la <span class="text_red">Iglesia</span>?</h1>
 
-                        <h3 class="text-size-large mxw475 margin-medium">La educación comenzó en la prehistoria, cuando los adultos entrenaban a los jóvenes en el conocimiento y las habilidades que se consideraban necesarios en su sociedad.</h3>
+                        <h3 class="text-size-large mxw475 margin-medium">Son tiempos de cuarentena, y el acto más generoso que se puede realizar es quedarse en casa para cuidar de los demás, de la familia y de cada uno.</h3>
                     
                         <div class="_bnrdbt fx">
                             <button class="btn-red">Enlístate Ahora</button>
@@ -110,7 +119,7 @@
                                 </svg>
                             </span>
 
-                            <img class="img-student pr" src="img/student.jpg" alt="estudiante maria auxiliadora">
+                            <img class="img-student pr" src="img/jesus.png" alt="estudiante maria auxiliadora">
 
                             <span class="psbsvgbottom fx">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="237.03" height="224.315" viewBox="0 0 237.03 224.315">
@@ -192,61 +201,46 @@
                 
                 <div class="w-layout-grid">
                     <div class="shop_item-wrapper fx fx-fd-c">
-                        <img src="img/blog-1.jpeg" class="item-card_image">
+                        <img src="img/blog1.png" class="item-card_image">
 
                         <div class="item-card_content fx fx-fd-c">
                             <div class="margin-custom2">
-                                <h3 class="margin-custom1">Retorno a la Escuela con Calidad Educativa</h3>
-                                <p class="text-size-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <h4 class="margin-custom1 text_clamp3">Lectura del Sábado de la Octava de Pascua, 23 de Abril de 2022</h4>
+                                <p class="text-size-small text_clamp9">En aquellos días, los jefes del pueblo, los ancianos y los escribas, viendo la seguridad de Pedro y Juan, y notando que eran hombres sin letras ni instrucción, estaban sorprendidos. Reconocían que habían sido compañeros de Jesús, pero, viendo de pie junto a ellos al hombre que había sido curado, no encontraban respuesta.</p>
                             </div>
 
                             <div class="fx mr-ta">
-                                <button class="button-secondary show_modal">Leer Más</button>
+                                <button class="button-secondary show_modal1">Leer Más</button>
                             </div>
                         </div>
                     </div>
 
                     <div class="shop_item-wrapper fx fx-fd-c">
-                        <img src="img/blog-2.jpeg" class="item-card_image">
+                        <img src="img/blog2.png" class="item-card_image">
 
                         <div class="item-card_content fx fx-fd-c">
                             <div class="margin-custom2">
-                                <h3 class="margin-custom1">Retorno a la Escuela con Calidad Educativa</h3>
-                                <p class="text-size-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <h4 class="margin-custom1 text_clamp3">Lectura del Miércoles de la I Semana de Cuaresma, 9 de Marzo de 2022</h4>
+                                <p class="text-size-small text_clamp9">El Señor dirigió la palabra a Jonás: “Ponte en marcha y ve a la gran ciudad de Nínive; allí les anunciarás el mensaje que yo te comunicaré”. Jonás se puso en marcha hacia Nínive, siguiendo la orden del Señor. Nínive era una ciudad inmensa; hacían falta tres días para recorrerla. Jonás empezó a recorrer la ciudad el primer día, proclamando: “Dentro de cuarenta días, Nínive será arrasada”.</p>
                             </div>
 
                             <div class="fx mr-ta">
-                                <button class="button-secondary show_modal">Leer Más</button>
+                                <button class="button-secondary show_modal2">Leer Más</button>
                             </div>
                         </div>
                     </div>
 
                     <div class="shop_item-wrapper fx fx-fd-c">
-                        <img src="img/blog-3.jpeg" class="item-card_image">
+                        <img src="img/blog3.png" class="item-card_image">
 
                         <div class="item-card_content fx fx-fd-c">
                             <div class="margin-custom2">
-                                <h3 class="margin-custom1">Retorno a la Escuela con Calidad Educativa</h3>
-                                <p class="text-size-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <h4 class="margin-custom1 text_clamp3">Lectura del Día</h4>
+                                <p class="text-size-small text_clamp9">LEn aquellos días, el Señor le habló al profeta Natán y le dijo: “Ve y dile a mi siervo David que el Señor le manda decir esto: ‘Cuando tus días se hayan cumplido y descanses para siempre con tus padres, engrandeceré a tu hijo, sangre de tu sangre, y consolidaré su reino. Él me construirá una casa y yo consolidaré su trono para siempre. Yo seré para él un padre y él será para mí un hijo. Tu casa y tu reino permanecerán para siempre ante mí, y tu trono será estable eternamente’ ”.</p>
                             </div>
 
                             <div class="fx mr-ta">
-                                <button class="button-secondary show_modal">Leer Más</button>
+                                <button class="button-secondary show_modal3">Leer Más</button>
                             </div>
                         </div>
                     </div>
@@ -261,7 +255,7 @@
 
 
     <!-- Modals -->
-    <div class="modal_cont">
+    <div class="modal_cont show_blog1">
         <div class="modal_anhost hide_modal"></div>
 
         <div class="modal-container t90vh">
@@ -282,12 +276,22 @@
 
                     <div class="modal_block_c">
                         <div class="content_hidden-anhost pd-b3r pd024">
-                            <h3>Retorno seguro: se inició el Año Escolar 2022 con maria auxiliadora</h3>
+                            <h3>Lectura del Sábado de la Octava de Pascua, 23 de Abril de 2022</h3>
 
                             <div class="fx fx-fd-c gp18 mr-t32">
-                                <p class="text-size-small">Más de 4 millones de estudiantes de escuelas públicas del Perú, entre ellas las instituciones educativas de Maria Auxiliadora, iniciaron el lunes 14 de marzo el Año Escolar 2022 de manera presencial y semipresencial luego de dos años de ausencia por la pandemia de la COVID-19.</p>
+                                <p class="text-size-small">Lectura del Libro de los Hechos de los Apóstoles 4, 13-21</p>
 
-                                <p class="text-size-small">Cumpliendo con los protocolos de bioseguridad (distanciamiento físico, uso de mascarilla y lavado de manos), las y los estudiantes de diversas instituciones educativas de Maria Auxiliadora volvieron a sus aulas, reencontrándose con sus pares y sus docentes para iniciar las clases.</p>
+                                <p class="text-size-small">En aquellos días, los jefes del pueblo, los ancianos y los escribas, viendo la seguridad de Pedro y Juan, y notando que eran hombres sin letras ni instrucción, estaban sorprendidos. Reconocían que habían sido compañeros de Jesús, pero, viendo de pie junto a ellos al hombre que había sido curado, no encontraban respuesta. Les mandaron salir fuera del Sanedrín y se pusieron a deliberar entre ellos, diciendo: “¿Qué haremos con estos hombres? Es evidente que todo Jerusalén conoce el milagro realizado por ellos, no podemos negarlo; pero, para evitar que se siga divulgando, les prohibiremos con amenazas que vuelvan a hablar a nadie de ese nombre”. Y habiéndolos llamado, les prohibieron severamente predicar y enseñar en el nombre de Jesús. Pero Pedro y Juan les replicaron diciendo: “¿Es justo ante Dios que os obedezcamos a vosotros más que a él? Juzgadlo vosotros. Por nuestra parte no podemos menos de contar lo que hemos visto y oído”. Pero ellos, repitiendo la prohibición, los soltaron, sin encontrar la manera de castigarlos a causa del pueblo, porque todos daban gloria a Dios por lo sucedido. Palabra de Dios. Te alabamos, Señor.</p>
+
+                                <p class="text-size-small">Salmo 117</p>
+
+                                <p class="text-size-small">R/. Te doy gracias, Señor, porque me escuchaste.</p>
+
+                                <p class="text-size-small">En el evangelio de San Marcos resume las experiencias de la comunidad cristiana con el Señor y su actitud primera de increencia al testimonio de los hermanos y hermanas, así mismo el Señor los envía a anunciar el Evangelio.</p>
+
+                                <p class="text-size-small">Oración</p>
+
+                                <p class="text-size-small">Señor Jesús, Hijo de Dios Padre, aumenta nuestra fe en Ti, en todo momento de nuestra vida, para el perdón de nuestros pecados, desde nuestro bautismo, y para la salvación de nuestras almas.</p>
                             </div>
                         </div>
                     </div>
@@ -296,6 +300,201 @@
         </div>
     </div>
 
+    <div class="modal_cont show_blog2">
+        <div class="modal_anhost hide_modal"></div>
+
+        <div class="modal-container t90vh">
+            <div class="dc">
+                <div class="modal_content_anhost _wheg71v pr">
+                    <div class="_pa35zs">
+                        <button aria-label="Cerrar" type="button" class="close_modal hide_modal">
+                            <span class="pr">
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                                    <path d="m6 6 20 20"></path>
+                                    <path d="m26 6-20 20"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="_1lplc7"></div>
+
+                    <div class="modal_block_c">
+                        <div class="content_hidden-anhost pd-b3r pd024">
+                            <h3>Lectura del Miércoles de la I Semana de Cuaresma, 9 de Marzo de 2022</h3>
+
+                            <div class="fx fx-fd-c gp18 mr-t32">
+                                <p class="text-size-small">Lectura de la Profecía de Jonás 3, 1-10</p>
+
+                                <p class="text-size-small">El Señor dirigió la palabra a Jonás: “Ponte en marcha y ve a la gran ciudad de Nínive; allí les anunciarás el mensaje que yo te comunicaré”. Jonás se puso en marcha hacia Nínive, siguiendo la orden del Señor. Nínive era una ciudad inmensa; hacían falta tres días para recorrerla. Jonás empezó a recorrer la ciudad el primer día, proclamando: “Dentro de cuarenta días, Nínive será arrasada”. Los ninivitas creyeron en Dios, proclamaron un ayuno y se vistieron con rudo sayal, desde el más importante al menor. La noticia llegó a oídos del rey de Nínive, que se levantó de su trono, se despojó del manto real, se cubrió con rudo sayal y se sentó sobre el polvo. Después ordenó proclamar en Nínive este anuncio de parte del rey y de sus ministros: “Que hombres y animales, ganado mayor y menor no coman nada; que no pasten ni beban agua. Que hombres y animales se cubran con rudo sayal e invoquen a Dios con ardor. Que cada cual se convierta de su mal camino y abandone la violencia. ¡Quién sabe si Dios cambiará y se compadecerá, se arrepentirá de su violenta ira y no nos destruirá!”. Vio Dios su comportamiento, cómo habían abandonado el mal camino, y se arrepintió de la desgracia que había determinado enviarles. Así que no la ejecutó.Palabra de Dios. Te alabamos, Señor.</p>
+
+                                <p class="text-size-small">Salmo 50</p>
+
+                                <p class="text-size-small">R/. Un corazón quebrantado y humillado, tú, Dios mío, no lo desprecias.</p>
+
+                                <p class="text-size-small">En el evangelio de San Lucas, nos cuestiona a saber leer los signos de la presencia de Dios en nuestra historia, y no buscar milagros, apariciones y novedades mediáticas, porque Él nos habla.</p>
+
+                                <p class="text-size-small">Oración</p>
+
+                                <p class="text-size-small">Señor Jesús, Hijo de Dios Padre, que eres compasivo, perdona nuestra soberbia por no estar atento a los signos de los tiempos, para el perdón de nuestros, y para la salvación de nuestras almas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_cont show_blog3">
+        <div class="modal_anhost hide_modal"></div>
+
+        <div class="modal-container t90vh">
+            <div class="dc">
+                <div class="modal_content_anhost _wheg71v pr">
+                    <div class="_pa35zs">
+                        <button aria-label="Cerrar" type="button" class="close_modal hide_modal">
+                            <span class="pr">
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                                    <path d="m6 6 20 20"></path>
+                                    <path d="m26 6-20 20"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="_1lplc7"></div>
+
+                    <div class="modal_block_c">
+                        <div class="content_hidden-anhost pd-b3r pd024">
+                            <h3>Lectura del Día</h3>
+
+                            <div class="fx fx-fd-c gp18 mr-t32">
+                                <p class="text-size-small">Lectura del segundo libro de Samuel</p>
+
+                                <p class="text-size-small">2 Sm 7, 4-5. 12-14. 16</p>
+
+                                <p class="text-size-small">En aquellos días, el Señor le habló al profeta Natán y le dijo: “Ve y dile a mi siervo David que el Señor le manda decir esto: ‘Cuando tus días se hayan cumplido y descanses para siempre con tus padres, engrandeceré a tu hijo, sangre de tu sangre, y consolidaré su reino.</p>
+
+                                <p class="text-size-small">Evangelio del Día</p>
+
+                                <p class="text-size-small">Mt 1, 16. 18-21. 24</p>
+
+                                <p class="text-size-small">Jacob engendró a José, el esposo de María, de la cual nació Jesús, llamado Cristo.</p>
+
+                                <p class="text-size-small">Cristo vino al mundo de la siguiente manera: Estando María, su madre, desposada con José y antes de que vivieran juntos, sucedió que ella, por obra del Espíritu Santo, estaba esperando un hijo. José, su esposo, que era hombre justo, no queriendo ponerla en evidencia, pensó dejarla en secreto.</p>
+
+                                <p class="text-size-small">Mientras pensaba en estas cosas, un ángel del Señor le dijo en sueños: “José, hijo de David, no dudes en recibir en tu casa a María, tu esposa, porque ella ha concebido por obra del Espíritu Santo. Dará a luz un hijo y tú le pondrás el nombre de Jesús, porque él salvará a su pueblo de sus pecados”.</p>
+
+                                <p class="text-size-small">Cuando José despertó de aquel sueño, hizo lo que le había mandado el ángel del Señor.</p>
+
+                                <p class="text-size-small">Palabras del Santo Padre</p>
+
+                                <p class="text-size-small">Queridos hermanos y hermanas, muy a menudo nuestra vida no es como la habíamos imaginado. Sobre todo, en las relaciones de amor, de afecto, nos cuesta pasar de la lógica del enamoramiento a la del amor maduro. Pero precisamente cuando el enamoramiento con sus expectativas parece terminar, ahí puede comenzar el amor verdadero. Amar de hecho no es pretender que el otro o la vida corresponda con nuestra imaginación; significa más bien elegir en plena libertad tomar la responsabilidad de la vida, así como se nos ofrece. Es por esto por lo que José nos da una lección importante, elige a María “con los ojos abiertos”. Y podemos decir con todos los riesgos. (Audiencia General, 1 de diciembre de 2021)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- start footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- <div class="footer-logo">
+                <a href="#">Antony</a>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div> -->
+
+            <div class="grid-container">
+                <div class="footer-links w340">
+                    <div class="newsletter_wrapper">
+                        <img src="img/footer-logo.png" alt="maria auxiliadora">
+                        <div class="text-style-string">Maria Auxiliadora</div>
+                    </div>
+                    <div class="footer_link-list">
+                        <div class="footer_link-block">
+                            <p class="text-size-small">Dentro de la parroquia San Pedro y San Pablo en la urb. Túpac Amaru, cuya fundación es un 29 de junio de 1967, una parroquia que trabaja con hermanos y hermanas dedicadas al servicio de Dios y a los hermanos.</p>
+                        </div>
+
+                        <div class="footer-social" style="margin-top: 0.75rem;">
+                            <a href="https://www.facebook.com/Mar%C3%ADa-Auxiliadora-101842578142122/?ref=page_internal" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="text-style-string">Programas</div>
+                    <div class="footer_link-list">
+                        <div class="footer_link-block">
+                            <p class="text-size-small-weight">Jóvenes y Adultos</p>
+                        </div>
+
+                        <div class="footer_link-block">
+                            <p class="text-size-small-weight">Niños y Adolescentes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="text-style-string">Servicios</div>
+                    <div class="footer_link-list">
+                        <div class="footer_link-block">
+                            <a href="" class="footer_link">Services</a>
+                        </div>
+
+                        <div class="footer_link-block">
+                            <a href="" class="footer_link">Testimonios</a>
+                        </div>
+
+                        <div class="footer_link-block">
+                            <a href="" class="footer_link">Contáctenos</a>
+                        </div>
+
+                        <div class="footer_link-block">
+                            <a href="" class="footer_link">Blog</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="text-style-string">Contáctenos</div>
+                    <div class="footer_link-list">
+                        <div class="footer_link-block">
+                            <p class="text-size-small-weight">
+                                <span class="text-style-allcaps">Dirección:</span>
+                                Independencia Lima, Perú
+                            </p>
+                        </div>
+
+                        <div class="footer_link-block">
+                            <p class="text-size-small-weight">
+                                <span class="text-style-allcaps">Celular:</span>
+                                987 654 321
+                            </p>
+                        </div>
+
+                        <div class="footer_link-block">
+                            <p class="text-size-small-weight">
+                                <span class="text-style-allcaps">Email:</span>
+                                maria@example.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_trailing-content">
+                <div class="text-size-small text-color-tertiary">© 2022 Maria Auxiliadora. Todos los derechos reservados.</div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
 
 
 

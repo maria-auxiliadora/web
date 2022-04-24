@@ -24,6 +24,10 @@ nav {
         box-shadow: 0px 0px 25px rgb(0 0 0 / 12%);
     }
 
+    .nav_ux {
+        cursor: pointer;
+    }
+
     nav .nav__block_ux li {
         list-style: none;
         display: flex;
@@ -37,13 +41,13 @@ nav {
     }
 
     /*----- PUNTO DE ACCESSO ICONS -----*/
-    nav .nav__block_ux li a {
+    nav .nav__block_ux li .nav_ux {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    nav .nav__block_ux li a::before {
+    nav .nav__block_ux li .nav_ux::before {
         content: '';
         position: absolute;
         width: 0px;
@@ -54,12 +58,12 @@ nav {
         transition: all .3s ease-in-out;
     }
 
-    nav .nav__block_ux li a.active::before {
+    nav .nav__block_ux li .nav_ux.active::before {
         width: 5px;
         height: 5px;
     }
 
-    nav .nav__block_ux li a .far {
+    nav .nav__block_ux li .nav_ux .far {
         margin-top: 2px;
         font-size: 25px;
         color: #093ec8;
@@ -71,15 +75,15 @@ nav {
         transition: all .3s ease-in-out;
     }
 
-    nav .nav__block_ux li a g {
+    nav .nav__block_ux li .nav_ux g {
         stroke: #093ec8;
     }
 
-    nav .nav__block_ux li a.active g {
+    nav .nav__block_ux li .nav_ux.active g {
         stroke: black;
     }
 
-    nav .nav__block_ux li a.active .far {
+    nav .nav__block_ux li .nav_ux.active .far {
         color: black;
     }
 }
