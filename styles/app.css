@@ -166,24 +166,6 @@
     flex-wrap: wrap;
 }
 
-.footer-social i {
-    width: 40px;
-    min-width: 40px;
-    height: 40px;
-    background-color: #fff;
-    color: rgb(75 78 252 / 70%);
-    border-radius: 8px;
-    border: 1px solid #e1e4e8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .3s ease;
-}
-
-.footer-social i:hover {
-    color: rgb(75 78 252 / 100%);
-    background-color: rgb(75 78 252 / 2.8%);
-}
 
 
 

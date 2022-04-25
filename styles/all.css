@@ -148,6 +148,10 @@ img {
 	justify-content: space-between;
 }
 
+.fx-jc-c {
+    justify-content: center;
+}
+
 .fx-fd-c {
 	flex-direction: column;
 }
@@ -207,54 +211,52 @@ img {
 }
 
 .bx_list {
-    /*padding: 30px;
-    cursor: default;
-    text-align: center;
-    position: relative;
-    border-radius: 18px;
-    background-color: var(--colorBlackAzulBtn);
-    transition: background-color .3s ease;*/
-
     padding: 30px;
     flex: 0 0 calc(33.33% - 20px);
     max-width: calc(33.33% - 20px);
-    background-color: var(--colorBlackAzulBtn);
     cursor: default;
     text-align: center;
     position: relative;
     border-radius: 18px;
+    border: 1px solid #e1e4e8;
+    background: #fff;
     transition: all .3s ease;
 }
 
-.bx_list:hover {
-    background-color: var(--colorBlack);
-    box-shadow: 0 0 35px -2px rgb(35 42 59 / 40%);
-}
-
-.bx_list:hover .button-bx-list {
-    color: var(--colorBlack);
-    background-color: #fafbfc;
-}
-
-.bx_list h4 {
-    color: #fafbfc;
-}
-
-.bx_list .icon {
-    height: 60px;
-    width: 60px;
-    background-color: rgb(255 255 255 / 10%);
-    margin: 15px auto 30px;
+.qualities_icon {
+    height: 64px;
+    width: 64px;
     border-radius: 15px;
-    text-align: center;
-    transition: all .5s ease;
+    border: 1px solid #e1e4e8;
+    background-color: rgb(75 78 252 / 2.8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.bx_list .icon i {
+.qualities_icon i {
     font-size: 35px;
-    color: #fafbfc;
-    line-height: 60px;
+    color: rgb(75 78 252 / 100%);
     transition: all .3s ease;
+}
+
+.url-social-icon {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: rgb(75 78 252 / 70%);
+    border-radius: 8px;
+    border: 1px solid #e1e4e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+}
+
+.url-social-icon:hover {
+    color: rgb(75 78 252 / 100%);
+    background-color: rgb(75 78 252 / 2.8%);
 }
 
 .text-color-red {
@@ -262,8 +264,17 @@ img {
     color: var(--colorRed);
 }
 
+.text-color-tertiary {
+    background-color: transparent;
+    color: #6a737d;
+}
+
 .mr-b8 {
     margin-bottom: 8px;
+}
+
+.mr-b1r {
+    margin-bottom: 1rem;
 }
 
 /*gaps*/
@@ -459,7 +470,6 @@ h4 {
 
 .footer_trailing-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 2.5px;
