@@ -14,8 +14,8 @@ nav {
     }
 
     .nav__block_ux {
+        max-width: 100%;
         display: flex;
-        width: 420px;
         border-radius: 20px;
         border: 1px solid rgb(0 0 0 / 12%);
         background-color: rgb(232 235 236 / 70%);
@@ -35,7 +35,7 @@ nav {
         align-items: center;
         justify-content: center;
         flex-grow: 1;
-        min-width: 50px;
+        width: 100px;
         overflow: hidden;
         white-space: nowrap;
     }

@@ -298,7 +298,7 @@ img {
     display: grid;
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(289px, 1fr));
 }
 
 .shop_item-wrapper {
@@ -360,14 +360,13 @@ h4 {
 	width: fit-content;
 }
 
-.t90vh {
-    top: 90vh !important;
+.t100vh {
+    top: 100vh;
     transition: top .5s ease;
 }
 
 /*-- modal --*/
 .modal_cont {
-    /*display: none;*/
     position: fixed;
     top: 0;
     left: 0;
@@ -398,8 +397,8 @@ h4 {
     padding: 40px;
 }
 
-.modal_cont_animate .t90vh {
-    top: 0 !important;
+.modal_cont_animate .modal-container .t100vh {
+    top: 0;
 }
 
 .modal_anhost {
@@ -416,7 +415,7 @@ h4 {
 
 .modal-container {
     display: flex;
-    padding: 0;
+    padding: 40px;
     align-items: center;
     -webkit-box-align: center;
     justify-content: center;
@@ -655,7 +654,6 @@ h4 {
     cursor: pointer;
     float: left;
     border-radius: 10px;
-    background-color: var(--colorRed);
     font-size: var(--fontSize14);
     line-height: 1.5rem;
     -webkit-transition: box-shadow .5s ease;
@@ -841,10 +839,6 @@ h1 {
 }
 
 @media only screen and (max-width: 990px) {
-    .w-layout-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
     .gp64 {
         gap: 48px;
     }
@@ -867,10 +861,6 @@ h1 {
     .text-size-large {
         font-size: 1.125rem;
         line-height: 1.75rem;
-    }
-
-    .w-layout-grid {
-        grid-template-columns: 1fr;
     }
 
     /*modals*/

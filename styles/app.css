@@ -67,13 +67,13 @@
     display: flex;
 }
 
-.nav-component .navbar ul {
+.navbar ul {
     display: flex;
     align-items: center;
     gap: 51px;
 }
 
-.nav-component .navbar ul li {
+.navbar ul li {
     display: inline-block;
     line-height: 32px;
 }
