@@ -81,14 +81,32 @@
 /* home */
 .home {
     position: relative;
-    overflow: hidden;
     cursor: default;
-    /*background-color: var(--colorFondo);*/
-    background-image: url(../img/fondo-home.png);
+    background-image: url(../img/portada.jpeg);
     background-size: cover;
     background-position: center;
     padding: 0 24px;
     min-height: 100vh;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../img/fondo-home.png); 
+    background-position: center;
+    opacity: .8; 
+}
+
+.home::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgb(232 235 236 / 70%);
+    background-position: center;
+    backdrop-filter: saturate(180%) blur(35px);
+    -webkit-backdrop-filter: saturate(180%) blur(35px);
+    width: 55%;
 }
 
 .home .full-screen {
@@ -111,12 +129,19 @@
     width: 54%;
 }
 
-.home .home-content .block:nth-child(2) {
-    width: auto;
-}
-
 .home .home-content .block .btnrgbmorad {
     margin-bottom: 15px;
+}
+
+
+/*sobre nosotros*/
+.about {
+    padding: 100px 24px;
+    padding-top: 7rem;
+}
+
+.about .section-title h2:before {
+    right: 16rem;
 }
 
 
@@ -172,22 +197,42 @@
 
 
 
+@media only screen and (max-width: 1097px) {
+    .cont_abt {
+        flex-direction: column;
+        gap: 46px !important;
+    }
 
+    .cont_abt .mw350 {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .about .section-title {
+        text-align: center;
+    }
+
+    .about .section-title h2:before {
+        right: 43%;
+        left: 43%;
+    }
+}
 
 @media only screen and (max-width: 1060px) {
+    .home::after {
+        width: 101%;
+    }
+
     .home .home-content {
         flex-direction: column;
         justify-content: center;
+        margin-top: 80px;
         gap: 76px;
     }
 
     .home .home-content .block {
         width: 100%;
         text-align: center;
-    }
-
-    .home .home-content .block:nth-child(2) {
-        display: none;
     }
 
     ._bnrdbt {
@@ -203,7 +248,18 @@
     }
 }
 
+@media only screen and (max-width: 671px) {
+    .cont_abt {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
 @media only screen and (max-width: 767px) {
+    .about {
+        padding-top: 80px;
+    }
+
     .nav-component {
         position: absolute;
         padding: 10px 14px 9px;
