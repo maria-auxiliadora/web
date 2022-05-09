@@ -87,6 +87,7 @@
     background-position: center;
     padding: 0 24px;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .home::before {
